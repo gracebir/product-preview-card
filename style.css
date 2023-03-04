@@ -11,6 +11,7 @@
     --color-very-dark-blue: hsl(212, 21%, 14%);
     --color-dark-grayish-blue: hsl(228, 12%, 48%);
     --color-dark-cyan: hsl(158, 36%, 37%);
+    --color-dark-cyan-hover: hsl(158, 34%, 30%);
     --color-cream: hsl(30, 38%, 92%);
 }
 
@@ -27,7 +28,7 @@ p{
 }
 
 .card{
-    width: 50%;
+    width: 54rem;
     height: 70vh;
     border-radius: 15px;
     margin: 0 auto;
@@ -70,7 +71,7 @@ p{
     font-family: 'Fraunces', sans-serif;
     font-weight: 700;
     line-height: 1;
-    font-size: 3.2rem;
+    font-size: 2.9rem;
 }
 
 .desc{
@@ -107,9 +108,14 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .3s ease-in;
     gap: .5rem;
     border-radius: 15px;
     cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--color-dark-cyan-hover);
 }
 
 .btn span{
@@ -125,7 +131,7 @@ p{
 @media (max-width: 56rem) {
     .card{
         width: 90%;
-        height: 95vh;
+        min-height: 94vh;
         border-radius: 15px;
         margin: 0 auto;
         display: flex;
@@ -161,7 +167,7 @@ p{
     
     .sub-title{
         color: var(--color-dark-grayish-blue);
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 400;
         letter-spacing: .5rem;
     }
@@ -174,7 +180,7 @@ p{
     }
     
     .desc{
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: var(--color-dark-grayish-blue);
         line-height: 1.5;
     }
